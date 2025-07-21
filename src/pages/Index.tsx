@@ -2,7 +2,7 @@
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstockcake.com%2Fi%2Fdigital-heart-glows_1584873_1187867&psig=AOvVaw07SKI6rRLY410mXipCc48o&ust=1753219820902000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPiIhPjyzo4DFQAAAAAdAAAAABAT")'}}>
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("https://i.ibb.co/HLG6F8xt/images-1.jpg")'}}>
 
       {/* Floating Hearts Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -32,7 +32,7 @@ const Index = () => {
             BABY LEXY YOU REALLY ARE THE BEST
           </h2>
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-foreground/90 font-semibold">
-            rate this and send me the kisses to how much you love it 
+           😜 rate this and send me the kisses to how much you love it 😘
           </h2>
           <h1 className="romantic-text text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4">
             ❤️‍🔥 by PSALM
