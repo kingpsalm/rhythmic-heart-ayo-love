@@ -2,7 +2,8 @@
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("https://ibb.co/RGYWFxCq")'}}>
+
       {/* Floating Hearts Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 text-primary/20 text-2xl float">♥</div>
