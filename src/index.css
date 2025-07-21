@@ -2,41 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Romantic Design System - All colors, gradients, fonts, animations defined here.
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Romantic Color Palette */
+    --background: 350 100% 97%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 350 50% 95%;
+    --card-foreground: 340 30% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 350 100% 97%;
+    --popover-foreground: 340 30% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 350 85% 60%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 340 40% 85%;
+    --secondary-foreground: 340 30% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 340 20% 90%;
+    --muted-foreground: 340 15% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 75% 65%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 340 20% 85%;
+    --input: 340 20% 85%;
+    --ring: 350 85% 60%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Romantic Gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(350 100% 95%), hsl(340 80% 92%));
+    --gradient-heart: linear-gradient(135deg, hsl(350 85% 60%), hsl(0 75% 65%));
+    --gradient-text: linear-gradient(135deg, hsl(0 0% 100%), hsl(340 20% 95%));
+
+    /* Heart Animation Variables */
+    --heart-size: 8rem;
+    --heart-pulse-duration: 1.2s;
+
+    /* Typography */
+    --font-romantic: 'Dancing Script', cursive;
+    --font-elegant: 'Great Vibes', cursive;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +114,63 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    background: var(--gradient-romantic);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Heartbeat Animation */
+  .heart-beat {
+    animation: heartbeat var(--heart-pulse-duration) ease-in-out infinite;
+  }
+  
+  .romantic-text {
+    font-family: var(--font-romantic);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .elegant-text {
+    font-family: var(--font-elegant);
+  }
+}
+
+@layer utilities {
+  /* Heart Beat Keyframes */
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    14% {
+      transform: scale(1.1);
+    }
+    28% {
+      transform: scale(1);
+    }
+    42% {
+      transform: scale(1.1);
+    }
+    70% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .float {
+    animation: float 3s ease-in-out infinite;
   }
 }
