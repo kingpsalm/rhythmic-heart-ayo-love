@@ -31,9 +31,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-foreground/90 font-semibold">
             BABY LEXY YOU REALLY ARE THE BEST
           </h2>
-          <h3 className="romantic-text text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4">
-            by PSALM
-          </h3>
+
         </div>
 
         {/* Subtle Sparkle Effects */}
