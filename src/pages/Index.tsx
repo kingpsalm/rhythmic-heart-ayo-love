@@ -2,7 +2,7 @@
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("https://st3.depositphotos.com/1003860/13026/i/450/depositphotos_130266386-stock-photo-red-and-black-hearts-on.jpg")'}}>
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url("https://www.google.com/imgres?q=heart%20with%20black%20background&imgurl=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F00%2F38%2F68%2F54%2F360_F_38685413_qRVga2d86G8rX0F2dGGdXOJck0A88uJp.jpg&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%2Fimages%3Fk%3Dheart%2Bwith%2Ba%2Bblack%2Bbackground&docid=9n64L8VPq0chWM&tbnid=zuqPVuPZB_WkkM&vet=12ahUKEwi3_Jv3686OAxUL7AIHHd5QKykQM3oECBoQAA..i&w=450&h=360&hcb=2&ved=2ahUKEwi3_Jv3686OAxUL7AIHHd5QKykQM3oECBoQAA")'}}>
 
       {/* Floating Hearts Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
