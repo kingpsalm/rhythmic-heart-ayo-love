@@ -28,7 +28,7 @@ const Index = () => {
             I LOVE YOU
           </h1>
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-foreground/90 font-semibold">
-            AYO MY NIGERIAN BESTIE
+            BABY LEXY YOU REALLY ARE THE BEST
           </h2>
         </div>
 
