@@ -29,7 +29,7 @@ const Index = () => {
             I LOVE YOU
           </h1>
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-foreground/90 font-semibold">
-            BABY LEXY YOU REALLY ARE THE BEST
+            MY WIFEY AND FAVORITE CUTIE
           </h2>
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-foreground/90 font-semibold">
            😜 rate this and send me the kisses to how much you love it 😘
